@@ -1,6 +1,6 @@
 import telebot
 
-# Replace 'YOUR_TELEGRAM_BOT_TOKEN' with your actual Telegram Bot token
+
 TOKEN = '6813273007:AAGhjGShknyUrRp5bdoTrZXc4egu2f7HHcs'
 bot = telebot.TeleBot(TOKEN)
 
@@ -10,7 +10,7 @@ def handle_start(message):
     bot.send_message(message.chat.id, "TODAY IS DIWALI, HAPPY DIWALI TO U😍")
 
 
-# Sample list of roll numbers
+
 roll_numbers = ["/1521041001",
               "/1521041004",
               "/1521041006",
@@ -34,7 +34,7 @@ roll_numbers = ["/1521041001",
               "/1521041042"
               ]
 
-# Define a command to display the roll numbers
+
 @bot.message_handler(commands=['showrollnumbers'])
 def display_roll_numbers(message):
     # Format the roll numbers
